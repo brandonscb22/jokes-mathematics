@@ -8,7 +8,7 @@ El proyecto sigue una arquitectura limpia para organizar el código de manera mo
 
 - `controllers`: Contiene los controladores de la API para cada entidad.
 - `services`: Contiene los servicios que encapsulan la lógica de negocio.
-- `repositories`: Contiene los repositorios para interactuar con la base de datos.
+- `repositories`: Contiene los repositorios para interactuar con los proveedores de datos externos.
 - `routes`: Define las rutas de la API y conecta los controladores con las peticiones HTTP.
 - `models`: Define los modelos de datos para interactuar con la base de datos MongoDB.
 
@@ -42,11 +42,6 @@ El proyecto sigue una arquitectura limpia para organizar el código de manera mo
 - `GET /maths`: Calcula el mínimo común múltiplo de una lista de números.
 - `GET /maths/increment`: Incrementa un número en 1.
 
-## Contribuciones
+## Documentación Swagger
 
-¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes mejoras que sugieres, no dudes en abrir un issue o enviar un pull request.
-
-## Licencia
-
-Este proyecto está bajo la [Licencia MIT](LICENSE).
-
+La documentación Swagger está generada automáticamente a partir de los comentarios JSDoc en el código fuente. Puedes acceder a la documentación Swagger visitando [http://localhost:3000/api-docs](http://localhost:3000/api-docs).
