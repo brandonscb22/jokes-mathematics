@@ -45,3 +45,10 @@ El proyecto sigue una arquitectura limpia para organizar el código de manera mo
 ## Documentación Swagger
 
 La documentación Swagger está generada automáticamente a partir de los comentarios JSDoc en el código fuente. Puedes acceder a la documentación Swagger visitando [http://localhost:3000/api-docs](http://localhost:3000/api-docs).
+
+## Pruebas Unitarias
+
+Para ejecutar las pruebas unitarias, utiliza el siguiente comando:
+
+```bash
+npm test
