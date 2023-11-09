@@ -28,6 +28,13 @@ El proyecto sigue una arquitectura limpia para organizar el código de manera mo
 4. Ejecuta la aplicación: `npm start`
 5. Accede a la API en `http://localhost:3000`
 
+## Ejemplo de archivo .env
+
+```
+PORT=3000
+DB_NAME=jokes
+```
+
 ## Endpoints Principales
 
 ### Chistes

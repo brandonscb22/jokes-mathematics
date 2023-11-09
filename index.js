@@ -5,13 +5,14 @@ const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 const jokesRoutes = require('./routes/jokesRoutes');
 const mathsRoutes = require('./routes/mathsRoutes');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/jokes', {}).then(() => console.log("connected to db"))
+mongoose.connect(`mongodb://localhost:27017/${process.env.DB_NAME}`, {}).then(() => console.log("connected to db"))
 .catch((e) => console.log(e));
 
 app.use('/jokes', jokesRoutes);
