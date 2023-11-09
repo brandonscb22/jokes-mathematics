@@ -10,7 +10,7 @@ const router = express.Router();
  *   description: The maths managing API
  * /maths?numbers={numbers}:
  *   get:
- *     summary: Get a joke
+ *     summary: Get the multiple common minimum
  *     tags: [Maths]
  *     parameters:
  *       - in: path
@@ -20,7 +20,7 @@ const router = express.Router();
  *         example: 3,4
  *     responses:
  *       200:
- *         description: Get joke.
+ *         description: Get the multiple common minimum
  *         content:
  *           application/json:
  *             schema:
@@ -49,7 +49,7 @@ router.get('/', mathController.getLCM);
  *   description: The maths managing API
  * /maths/increment?number={number}:
  *   get:
- *     summary: Get a joke
+ *     summary: Get increment a number by one
  *     tags: [Maths]
  *     parameters:
  *       - in: path
@@ -59,7 +59,7 @@ router.get('/', mathController.getLCM);
  *         example: 3
  *     responses:
  *       200:
- *         description: Get joke.
+ *         description: Get increment a number by one
  *         content:
  *           application/json:
  *             schema:
